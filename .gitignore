@@ -1,0 +1,23 @@
+# OS
+Thumbs.db
+.DS_Store
+
+# Node packages.
+node_modules/
+
+# Sass caches.
+.sass-cache
+
+# Project files.
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Build files.
+.publish/
+dst/*
+!dst/.gitkeep
+
+# Logs
+*.log

@@ -1,0 +1,57 @@
+@import "../utils/_config";
+
+section#todo {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 280px;
+  height: 100%;
+  padding: 20px;
+
+  p.headline {
+    color: $accent-color;
+    margin: 0;
+  }
+
+  input[type='text'] {
+    display: block;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid $dividers;
+    padding-bottom: 5px;
+    transition: all .3s ease;
+    width: 240px;
+    color: $text-color;
+
+    &:focus {
+      border-bottom: 1px solid $accent-color;
+    }
+  }
+
+  form {
+    .form-title {
+      font-size: 2rem;
+    }
+
+    .form-desc {
+      margin-top: 2rem;
+      font-size: 1rem;
+    }
+
+    .form-submit {
+      margin-top: 1rem;
+      font-size: 1rem;
+      padding: .5rem;
+      border: none;
+      outline: none;
+      color: $text-color;
+      background-color: $dividers;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+  }
+}

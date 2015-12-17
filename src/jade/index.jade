@@ -1,0 +1,12 @@
+extends layouts/_layout_
+block title
+  title ToDo
+block prepend body
+  main
+    section#todo
+      form#todo-form
+        p.headline Title
+        input(class='form-title'  type='text'   name='title')
+        input(class='form-desc'   type='text'   name='description' placeholder='Description')
+        input(class='form-submit' type='submit' value='ToDo')
+    section#list
