@@ -1,0 +1,92 @@
+section#todo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 280px;
+  height: 100%;
+  padding: 20px; }
+  section#todo p.headline {
+    color: #009688;
+    margin: 0; }
+  section#todo input[type='text'] {
+    display: block;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid #EEEEEE;
+    padding-bottom: 5px;
+    transition: all .3s ease;
+    width: 240px;
+    color: #424242; }
+    section#todo input[type='text']:focus {
+      border-bottom: 1px solid #009688; }
+  section#todo form .form-title {
+    font-size: 2rem; }
+  section#todo form .form-desc {
+    margin-top: 2rem;
+    font-size: 1rem; }
+  section#todo form .form-submit {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: .5rem;
+    border: none;
+    outline: none;
+    color: #424242;
+    background-color: #EEEEEE;
+    cursor: pointer;
+    border-radius: 2px; }
+
+section#list {
+  position: absolute;
+  top: 0;
+  left: 280px;
+  box-sizing: border-box;
+  width: calc(100% - 280px);
+  padding: 20px; }
+  section#list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap; }
+  section#list li {
+    width: 200px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05); }
+    section#list li .title {
+      height: 50px;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: larger;
+      font-weight: bold;
+      line-height: 30px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: #FFFFFF;
+      background-color: #009688;
+      border-radius: 2px 2px 0 0; }
+    section#list li .description {
+      height: 200px;
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: smaller;
+      word-wrap: break-word;
+      overflow: hidden;
+      background-color: #FAFAFA;
+      border-radius: 0 0 2px 2px; }
+
+body, html {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+main {
+  position: relative;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%; }
